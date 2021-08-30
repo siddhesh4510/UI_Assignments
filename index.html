@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style/main.css">
+
+ 
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">PetroleumProductManagement</a>
+    </div>
+    <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="Product.html">Product</a></li>
+        <li><a href="sell.html">Sell</a></li>
+        <li><a href="teams.html">Teams</a></li>
+      </ul>
+
+    </div>
+  </div>
+</nav>
+<!-- 
+<div class="row container">
+    <img src="images.jfif" style="width: 100%;">
+
+</div> -->
+<div class="container-fluid no-padding">
+    <div class="row">
+      <div >
+        <img src="img/port-arthur-1584098.jpg" alt="placeholder 960" width="100%" height="300px"/>
+      </div>
+    </div>
+  </div>
+  
+  
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-4 sidenav" ">
+        <h2 id="info-title">Welcome</h2>
+        <p id="info">Petroleum products are fuels made from crude oil and hydrocarbons contained in natural gas. Petroleum products can also be made from coal, natural gas, and biomass..</p>
+        
+        <p>...PetroleumProductManagement...</p>
+    </div>
+    <div class="col-sm-8 text-left"> 
+        <h2>Click On Our Products</h2>
+        <div class="row" style="padding: 10px;">
+            <div class="col-sm-2" style="margin: 30px;">
+                <div class="card" style="width:200px" id="Diesel-info">
+                    <img class="card-img-top" src="img/Diesel.jfif" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                      <h4 class="card-title">Disel</h4>
+                      
+                    </div>
+                  </div>
+            </div>
+            <div class="col-sm-2" style="margin: 30px;">
+                <div class="card" style="width:200px " id="lpg-info">
+                    <img class="card-img-top" src="img/lpg.jfif" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                      <h4 class="card-title">LPG</h4>
+                      
+                    </div>
+                  </div>
+            </div>
+            <div class="col-sm-2" style="margin: 30px;" id="cng-info">
+                <div class="card" style="width:200px " >
+                    <img class="card-img-top" src="img/cng.jfif" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                      <h4 class="card-title">CNG</h4>
+                      
+                    </div>
+                  </div>
+            </div>
+        </div>
+      
+    </div>
+    <!-- <div class="col-sm-2 sidenav">
+      <div class="well">
+        <p>ADS</p>
+      </div>
+      <div class="well">
+        <p>ADS</p>
+      </div>
+    </div> -->
+  </div>
+</div>
+<script>
+  $(document).ready(function(){
+    $(document).on("click" , "#Diesel-info", function(){
+      $("#info-title").html("Diesel")
+      $("#info").html(`Diesel oil is a type of Fuel oil. It is produced from the fractional distillation of crude oil between 200 °C and 350 °C at atmospheric pressure, resulting in a mixture of carbon chains that
+typically contain between 8 and 21 carbon atoms per molecule with specific gravity range of 0.76–0.94. Diesel fuel quality is defined by the cetane number, which usually falls into the
+range 30–60. A high cetane number indicates the potential for easy starting and smooth operation of the engine. The cetane number is the analog of the automobile engine octane
+number, with cetane (n-hexadecane, C16H34) having the arbitrarily assigned number of 100. At the other end of the scale, heptamethylnonane, an isomer of cetane, has the assigned
+cetane number of 0`)
+    })
+
+    $(document).on("click" , "#lpg-info", function(){
+      $("#info-title").html("LPG")
+      $("#info").html(`LPG is used as a fuel in a range of applications including in heating and cooking appliances, industrial applications, in vehicles and as a propellant and refrigerant. LPG can be obtained primarily as propane, butane or a mixture of the two. A powerful odorant is added so that it is easily detected.`)
+    })
+
+    $(document).on("click" , "#cng-info" , function(){
+      $("#info-title").html("CNG")
+      $("#info").html(`Compressed natural gas is a fuel gas made of natural gas, which is mainly composed of methane (CH4), compressed to less than 1% of the volume it occupies at standard atmospheric pressure. It is stored and distributed in hard containers at a pressure of 20–25 MPa (2,900–3,600 psi), usually in cylindrical or spherical shapes.`)
+    })
+
+  })
+</script>
+
+<footer class="container-fluid text-center">
+  <p>Footer Text</p>
+</footer>
+
+</body>
+</html>
